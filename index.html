@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook Pro</title>
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main>
+        <section class="container mt-5">
+            <div class="row gx-5">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/mac.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h1>
+                        Customize your Blue 24-inch iMac with Apple M1 chip.
+                    </h1>
+                    <p>
+                        Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                        16-core Neutral Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic
+                        Mouse Magic Keyboard - US English.
+                    </p>
+                    <div class="my-5">
+                        <h3>Memory</h3>
+                        <button id="eightGB" class="btn btn-dark mx-2 my-1">8 GB Unified Memory</button>
+                        <button id="sixteenGB" class="btn btn-dark mx-2 my-1">16 GB Unified Memory</button>
+                    </div>
+
+                    <div class="my-5">
+                        <h3>Storage</h3>
+                        <button id="normal-storage" class="btn btn-dark mx-2 my-1">256 GB SSD Storage</button>
+                        <button id="intermidiate-storage" class="btn btn-dark mx-2 my-1">512 GB SSD Storage</button>
+                        <button id="professional-storage" class="btn btn-dark mx-2 my-1">1 TB SSD Storage</button>
+                    </div>
+
+                    <div class="my-5">
+                        <h3>Choose Your Delivery Option</h3>
+                        <button id="free" class="btn btn-dark mx-2 my-1">Friday, Aug 25 Free Delivery</button>
+                        <button id="paid" class="btn btn-dark mx-2 my-1">Friday, Aug 21 Delivery Charge $20</button>
+                    </div>
+
+                    <table class="table mt-5">
+                        <thead>
+                            <tr>
+                                <th scope="col">Best Price</th>
+                                <th scope="col">$ <span id="best-price">1299</span></th>
+                            </tr>
+
+                            <tr>
+                                <th scope="col">Extra Money Cost</th>
+                                <th scope="col">$ <span id="memory-table">00</span></th>
+                            </tr>
+
+                            <tr>
+                                <th scope="col">Extra Storage Cost</th>
+                                <th scope="col">$ <span id="storage-table">00</span></th>
+                            </tr>
+
+                            <tr>
+                                <th scope="col">Delivery Charge</th>
+                                <th scope="col">$ <span id="delivery-charge">00</span></th>
+                            </tr>
+
+                            <tr class="table-dark">
+                                <th scope="col">Total Price</th>
+                                <th scope="col">$ <span id="total">1299</span></th>
+                            </tr>
+
+                        </thead>
+                    </table>
+
+                    <div class="my-5">
+                        <h3>Add Promo Code to get 20% Discount</h3>
+                        <div class="d-flex">
+                            <input id="promo-code" class="form-control me-2" type="search" placeholder="Add Promo Code"
+                                aria-label="Search">
+                            <button onclick="applyCode()" class="btn btn-danger" type="submit">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <h1 class="text-center">Total Price : $ <span id="main-total">1299</span></h1>
+    </main>
+
+    <!-- js link  -->
+    <script src="main.js"></script>
+</body>
+
+</html>
